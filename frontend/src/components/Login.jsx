@@ -29,7 +29,7 @@ function Login({ setUser }) {
         setError('');
         try {
             if (role === 'teacher') {
-                const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/teacher/login`, {
+                await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/teacher/login`, {
                     username,
                     password
                 });

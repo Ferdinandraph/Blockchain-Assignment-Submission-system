@@ -319,6 +319,7 @@ function TeacherDashboard({ user }) {
                                             <a
                                                 href={`https://gateway.pinata.cloud/ipfs/${sub.fileHash}`}
                                                 target="_blank"
+                                                rel="noreferrer"
                                                 className="text-indigo-600 hover:underline truncate"
                                             >
                                                 {sub.fileHash.slice(0, 10)}...
