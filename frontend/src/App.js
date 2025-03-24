@@ -36,7 +36,7 @@ function App() {
         if (location.pathname === '/' && user) {
             setUser(null);
         }
-    }, [location.pathname, user]);
+    }, [location.pathname]);
 
     const handleLogout = () => {
         setUser(null);
